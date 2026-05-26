@@ -7,7 +7,7 @@ import TypedTitle from "./TypedTitle";
 
 export default function HeroSection() {
   return (
-    <section id="introduction" className="scroll-mt-32 md:scroll-mt-26">
+    <section id="introduction" className="scroll-mt-35 md:scroll-mt-35">
       {/* Top Row: Avatar Left, Info Right */}
       <div className="flex flex-row items-start gap-6 mb-2">
         {/* Avatar Column */}
