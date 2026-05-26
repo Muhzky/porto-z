@@ -70,7 +70,6 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
   const scrolledClasses = isScrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border border-zinc-200/40 dark:border-zinc-800/40 shadow-md" : "bg-transparent";
   const paddingClasses = "py-0.5 px-2";
 
-const navItemButtonClasses = (active: boolean) => {
 const navItemButtonClasses = (active: boolean | null = null) =>
   `flex items-center gap-1 px-1.5 py-0.5 text-xs md:text-sm rounded-full transition-all duration-300 font-normal ${
     active
