@@ -69,7 +69,7 @@ export default function Home() {
       <Navbar activeSection={activeSection} onNavClick={handleNavClick} />
 
       {/* Main Layout Container */}
-      <div className="w-full max-w-3xl mx-auto px-6 sm:px-12 pt-20 md:pt-25  pb-6 flex-1 relative z-10 flex flex-col">
+      <div className="w-full max-w-3xl mx-auto px-6 sm:px-12 pt-28 md:pt-32  pb-6 flex-1 relative z-10 flex flex-col">
         <main className="flex-1 flex flex-col gap-16 md:gap-20">
           
           <HeroSection />
