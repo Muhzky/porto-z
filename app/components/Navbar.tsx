@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "./ThemeToggle";
 
 interface NavbarProps {
   activeSection: string;
@@ -119,7 +119,7 @@ const navItemButtonClasses = (active: boolean | null = null) =>
 
         {/* Theme Toggle Button built into the navbar capsule */}
         
-        {/* <ThemeToggle className="!p-2.5" /> */}
+        <ThemeToggle className="!p-2.5" />
       </nav>
     </header>
   );

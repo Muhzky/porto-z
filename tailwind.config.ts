@@ -2,7 +2,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  // darkMode: "class", // Wajib untuk mengaktifkan variant dark:
+  darkMode: "class", // Wajib untuk mengaktifkan variant dark:
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
