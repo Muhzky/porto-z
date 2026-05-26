@@ -12,8 +12,6 @@ export function Providers({
       attribute="class"
       defaultTheme="light"
       enableSystem={false}
-      forcedTheme="light"
-      storageKey="theme"
     >
       {children}
     </ThemeProvider>
