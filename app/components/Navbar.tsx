@@ -68,10 +68,10 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
 
   const baseHeaderClasses = "fixed top-5 left-0 right-0 z-50 flex justify-center transition-all duration-300";
   const scrolledClasses = isScrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border border-zinc-200/40 dark:border-zinc-800/40 shadow-md" : "bg-transparent";
-  const paddingClasses = "py-0.5 px-2";
+  const paddingClasses = "py-0.7 px-2";
 
 const navItemButtonClasses = (active: boolean | null = null) =>
-  `flex items-center gap-1 px-1.5 py-0.5 text-xs md:text-sm rounded-full transition-all duration-300 font-normal ${
+  `flex items-center gap-1 px-1.5 py-0.7 text-xs md:text-sm rounded-full transition-all duration-300 font-normal ${
     active
       ? "bg-zinc-200/60 text-zinc-950 dark:bg-zinc-800/80 dark:text-zinc-50"
       : "text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100/50 dark:hover:bg-zinc-800/40"
