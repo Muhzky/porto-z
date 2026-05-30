@@ -9,10 +9,10 @@ export default function HeroSection() {
   return (
     <section id="introduction" className="scroll-mt-35 md:scroll-mt-35">
       {/* Top Row: Avatar Left, Info Right */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-2">
+      <div className="flex flex-row items-start gap-6 mb-2">
         {/* Avatar Column */}
         <div className="shrink-0">
-          <div className="relative w-28 h-28 sm:w-30 sm:h-30 md:w-35 md:h-35 rounded-full overflow-hidden border-2 border-zinc-200 shadow-md bg-zinc-100">
+          <div className="relative w-30 h-30 md:w-35 md:h-35 rounded-full overflow-hidden border-2 border-zinc-200 dark:border-zinc-700 shadow-md bg-zinc-100 dark:bg-zinc-800">
             <Image
               src="/avatar.jpg"
               alt="Muh Zacky Wal Ikram Portrait"
@@ -24,11 +24,11 @@ export default function HeroSection() {
         </div>
 
         {/* Info Column (Name, Title, Location, Socials) */}
-        <div className="flex-1 flex flex-col justify-center gap-2 pt-1 text-center sm:text-left">
+        <div className="flex-1 flex flex-col justify-center gap-2 pt-1">
           {/* Name & Verified Badge */}
           <div className="flex flex-col gap-0.5">
             <div className="flex items-center gap-2">
-              <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900  leading-tight">
+              <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 leading-tight">
                 Muh Zacky Wal Ikram
               </h1>
               {/* Verified Badge moved here next to name */}
@@ -48,13 +48,13 @@ export default function HeroSection() {
                 typingSpeed={100}
                 deletingSpeed={50}
                 pause={1500}
-                className="text-sm md:text-base font-medium text-blue-600"
+                className="text-sm md:text-base font-medium text-blue-600 dark:text-blue-400"
               />
             </div>
           </div>
 
           {/* Location */}
-          <div className="flex items-center gap-1.5 text-xs md:text-sm text-zinc-500 mt-1">
+          <div className="flex items-center gap-1.5 text-xs md:text-sm text-zinc-500 dark:text-zinc-400 mt-1">
             <svg
               className="w-3.5 h-3.5 text-grey-500"
               fill="none"
@@ -83,7 +83,7 @@ export default function HeroSection() {
               href="https://github.com/muhzky"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-zinc-900 transition-colors duration-300"
+              className="text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300"
               aria-label="GitHub"
             >
               <svg
@@ -105,7 +105,7 @@ export default function HeroSection() {
               href="https://linkedin.com/in/muhzky"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-zinc-900 transition-colors duration-300"
+              className="text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300"
               aria-label="LinkedIn"
             >
               <svg
@@ -128,7 +128,7 @@ export default function HeroSection() {
               href="https://instagram.com/elkiboi"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-zinc-900 transition-colors duration-300"
+              className="text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300"
               aria-label="Instagram"
             >
               <svg
@@ -149,7 +149,7 @@ export default function HeroSection() {
             {/* Email */}
             <a
               href="mailto:qayza.celluler1@gmail.com"
-              className="text-zinc-400 hover:text-zinc-900 transition-colors duration-300"
+              className="text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300"
               aria-label="Email"
             >
               <svg
@@ -171,10 +171,10 @@ export default function HeroSection() {
 
       {/* Bottom Row: Description Full Width */}
       <div className="w-full">
-        <p className="text-sm md:text-base leading-relaxed text-zinc-600 mt-4 mb-2">
+        <p className="text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-300 mt-4 mb-2">
           Hai! Saya Muh Zacky Wal Ikram 👋
         </p>
-        <span className="text-sm md:text-base leading-relaxed text-zinc-600">
+        <span className="text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-300">
           Jr Frontend Dev & Graphic Designer yang antusias dalam menciptakan
           pengalaman digital yang modern, interaktif, dan mudah digunakan.
           Menikmati proses mengubah ide menjadi tampilan yang fungsional melalui
@@ -185,7 +185,7 @@ export default function HeroSection() {
         {/* Skills Badges Section - Full Width Below Description */}
         <div className="flex flex-wrap gap-2 mt-4">
           {/* Java */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#007396]"
               viewBox="0 0 24 24"
@@ -196,7 +196,7 @@ export default function HeroSection() {
             Java
           </div>
           {/* PHP */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#777BB4]"
               viewBox="0 0 24 24"
@@ -207,7 +207,7 @@ export default function HeroSection() {
             PHP
           </div>
           {/* Laravel */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#FF2D20]"
               viewBox="0 0 24 24"
@@ -218,7 +218,7 @@ export default function HeroSection() {
             Laravel
           </div>
           {/* Next.js */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4"
               viewBox="0 0 24 24"
@@ -229,7 +229,7 @@ export default function HeroSection() {
             Next.js
           </div>
           {/* React.js */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#61DAFB]"
               viewBox="0 0 24 24"
@@ -240,7 +240,7 @@ export default function HeroSection() {
             React.js
           </div>
           {/* Git */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#F05032]"
               viewBox="0 0 24 24"
@@ -251,7 +251,7 @@ export default function HeroSection() {
             Git
           </div>
           {/* C++ */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#00599C]"
               viewBox="0 0 24 24"
@@ -262,7 +262,7 @@ export default function HeroSection() {
             C++
           </div>
           {/* Figma */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#F24E1E]"
               viewBox="0 0 24 24"
@@ -273,7 +273,7 @@ export default function HeroSection() {
             Figma
           </div>
           {/* Photoshop */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#31A8FF]"
               viewBox="0 0 24 24"
@@ -284,7 +284,7 @@ export default function HeroSection() {
             Photoshop
           </div>
           {/* Canva */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 dark:border-zinc-700 bg-white/40 dark:bg-zinc-800/40 text-xs font-semibold text-zinc-700 dark:text-zinc-200 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
             <svg
               className="w-4 h-4 text-[#00C4CC]"
               viewBox="0 0 24 24"
