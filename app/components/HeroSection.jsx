@@ -28,7 +28,7 @@ export default function HeroSection() {
           {/* Name & Verified Badge */}
           <div className="flex flex-col gap-0.5">
             <div className="flex items-center gap-2">
-              <h1 className="text-[22px] sm:text-[22px] md:text-[25px] font-bold tracking-tight text-zinc-900 leading-tight">
+              <h1 className="text-[22px] sm:text-[22px] md:text-[23px] font-bold tracking-tight text-zinc-900 leading-tight">
                 Muh Zacky Wal Ikram
               </h1>
               {/* Verified Badge moved here next to name */}
