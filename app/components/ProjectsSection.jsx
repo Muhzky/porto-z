@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function ProjectsSection() {
   // State untuk mengontrol Project Accordion (null berarti tidak ada yang terbuka)
-  const [openProjectId, setOpenProjectId] = useState(null);
+  const [openProjectId, setOpenProjectId] = useState(1);
 
   const handleToggle = (id) => {
     setOpenProjectId(openProjectId === id ? null : id);
