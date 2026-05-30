@@ -37,7 +37,7 @@ export default function ProjectsSection() {
       className="scroll-mt-32 md:scroll-mt-36 flex flex-col gap-6"
     >
       <div className="mb-2">
-        <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
+        <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-zinc-900">
           Projects
         </h2>
       </div>
@@ -50,8 +50,8 @@ export default function ProjectsSection() {
               key={project.id}
               className={`border rounded-xl transition-all duration-300 overflow-hidden ${
                 isOpen
-                  ? "border-blue-400  dark:border-blue-500"
-                  : "border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 dark:bg-zinc-800"
+                  ? "border-blue-400"
+                  : "border-zinc-200 hover:border-zinc-300"
               }`}
             >
               {/* Header Baris (Clickable) */}
@@ -60,20 +60,20 @@ export default function ProjectsSection() {
                 className="w-full flex items-start justify-between p-5 text-left focus:outline-none group"
               >
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                  <h3 className="text-base sm:text-lg font-bold text-zinc-900 transition-colors group-hover:text-blue-600">
   {project.title}
 </h3>
                 </div>
 
                 <div className="flex items-center gap-4 sm:gap-6 ml-1">
                   {/* Deskripsi Singkat (Hidden di Mobile) */}
-                  <p className="hidden sm:block text-sm text-zinc-500 dark:text-zinc-400 max-w-[240px] text-right leading-snug">
+                  <p className="hidden sm:block text-sm text-zinc-500 max-w-[240px] text-right leading-snug">
                     {project.shortDesc}
                   </p>
 
                   {/* Ikon Panah */}
                   <svg
-                    className={`w-5 h-5 text-zinc-400 dark:text-zinc-500 shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-zinc-400 shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-180 text-blue-500" : ""
                     }`}
                     fill="none"
@@ -97,9 +97,9 @@ export default function ProjectsSection() {
                 }`}
               >
                 <div className="px-5 pb-5 pt-0">
-                  <div className="pt-4 border-t border-zinc-100 dark:border-zinc-700/50 flex flex-col gap-4">
+                  <div className="pt-4 border-t border-zinc-100 flex flex-col gap-4">
                     {/* Deskripsi Lengkap */}
-                    <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+                    <p className="text-sm text-zinc-600 leading-relaxed">
                       {project.fullDesc}
                     </p>
 
@@ -108,7 +108,7 @@ export default function ProjectsSection() {
                       {project.techStack.map((tech, idx) => (
                         <span
                           key={idx}
-                          className="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-200 border border-blue-200 dark:border-blue-800/50"
+                          className="px-2.5 py-1 rounded-md text-xs font-semibold bg-blue-100 text-blue-700 border border-blue-200"
                         >
                           {tech}
                         </span>
