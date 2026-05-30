@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div className="flex flex-row items-start gap-3 sm:gap-6 mb-2">
         {/* Avatar Column */}
         <div className="shrink-0">
-          <div className="relative w-30 h-30 md:w-35 md:h-35 rounded-full overflow-hidden border-2 border-zinc-200 shadow-md bg-zinc-100">
+          <div className="relative w-30 h-30 md:w-35 md:h-35 sm:w-[110px] sm:h-[110px] rounded-full overflow-hidden border-2 border-zinc-200 shadow-md bg-zinc-100">
             <Image
               src="/avatar.jpg"
               alt="Muh Zacky Wal Ikram Portrait"
@@ -28,7 +28,7 @@ export default function HeroSection() {
           {/* Name & Verified Badge */}
           <div className="flex flex-col gap-0.5">
             <div className="flex items-center gap-2">
-              <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 leading-tight">
+              <h1 className="text-2xl md:text-3xl sm:text-2xl font-bold tracking-tight text-zinc-900 leading-tight">
                 Muh Zacky Wal Ikram
               </h1>
               {/* Verified Badge moved here next to name */}
@@ -48,7 +48,7 @@ export default function HeroSection() {
                 typingSpeed={100}
                 deletingSpeed={50}
                 pause={1500}
-                className="text-sm md:text-base font-medium text-blue-600"
+                className="text-sm md:text-base sm:text-[16px]font-medium text-blue-600"
               />
             </div>
           </div>
