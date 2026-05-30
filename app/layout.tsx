@@ -4,14 +4,14 @@ import { Providers } from "./providers";
 import "./globals.css";
 
 const poppins = Poppins({
-  variable: "--font-poppins",
   subsets: ["latin"],
+  variable: "--font-poppins",
   weight: ["400", "500", "600", "700"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  variable: "--font-geist-mono",
 });
 
 export const metadata: Metadata = {
@@ -21,17 +21,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
       suppressHydrationWarning
       className={`${poppins.variable} ${geistMono.variable}`}
     >
-      <body className="min-h-screen flex flex-col antialiased">
-        <Providers>{children}</Providers>
+      <body suppressHydrationWarning>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

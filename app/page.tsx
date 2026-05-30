@@ -62,14 +62,14 @@ export default function Home() {
   return (
     <div className="relative min-h-screen w-full flex flex-col font-sans transition-colors duration-500 bg-background text-foreground overflow-hidden">
       {/* Decorative blobs */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1400px] h-[600px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-400/20 via-indigo-300/5 to-transparent dark:from-purple-900/15 dark:via-transparent pointer-events-none z-0" />
-      <div className="absolute top-[25%] left-[-10%] w-[45%] h-[40%] rounded-full bg-purple-400/5 dark:bg-purple-900/5 blur-[120px] pointer-events-none" />
-      <div className="absolute top-[60%] right-[-10%] w-[40%] h-[45%] rounded-full bg-indigo-400/5 dark:bg-indigo-900/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1400px] h-[600px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-400/20 via-indigo-300/5 to-transparent pointer-events-none z-0" />
+      <div className="absolute top-[25%] left-[-10%] w-[45%] h-[40%] rounded-full bg-purple-400/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-[60%] right-[-10%] w-[40%] h-[45%] rounded-full bg-indigo-400/5 blur-[120px] pointer-events-none" />
 
       <Navbar activeSection={activeSection} onNavClick={handleNavClick} />
 
       {/* Main Layout Container */}
-      <div className="w-full max-w-3xl mx-auto px-6 sm:px-12 pt-28 md:pt-32  pb-6 flex-1 relative z-10 flex flex-col">
+      <div className="w-full max-w-3xl mx-auto px-4 sm:px-8 md:px-12 pt-24 md:pt-32 pb-6">
         <main className="flex-1 flex flex-col gap-16 md:gap-20">
           
           <HeroSection />
