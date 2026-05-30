@@ -12,11 +12,7 @@ export default function HeroSection() {
       <div className="flex flex-row items-start gap-3 sm:gap-6 mb-2">
         {/* Avatar Column */}
         <div className="shrink-0">
-          <div
-            className="relative w-[96px] h-[96px]
-sm:w-[110px] sm:h-[110px]
-md:w-[140px] md:h-[140px] rounded-full overflow-hidden border-2 border-zinc-200 shadow-md bg-zinc-100"
-          >
+          <div className="relative w-30 h-30 md:w-35 md:h-35 rounded-full overflow-hidden border-2 border-zinc-200 shadow-md bg-zinc-100">
             <Image
               src="/avatar.jpg"
               alt="Muh Zacky Wal Ikram Portrait"
@@ -31,19 +27,13 @@ md:w-[140px] md:h-[140px] rounded-full overflow-hidden border-2 border-zinc-200 
         <div className="flex-1 flex flex-col justify-center gap-2 pt-1">
           {/* Name & Verified Badge */}
           <div className="flex flex-col gap-0.5">
-            <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
-              <h1
-                className="text-[28px]
-sm:text-[34px]
-md:text-5xl font-bold tracking-tight text-zinc-900 leading-tight"
-              >
+            <div className="flex items-center gap-2">
+              <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 leading-tight">
                 Muh Zacky Wal Ikram
               </h1>
               {/* Verified Badge moved here next to name */}
               <svg
-                className="w-4 h-4
-sm:w-5 sm:h-5
-md:w-6 md:h-6 text-blue-500 shrink-0"
+                className="w-5 h-5 md:w-6 md:h-6 text-blue-500 shrink-0"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -58,13 +48,13 @@ md:w-6 md:h-6 text-blue-500 shrink-0"
                 typingSpeed={100}
                 deletingSpeed={50}
                 pause={1500}
-                className="text-[14px] sm:text-[16px] md:text-xl font-medium text-blue-600"
+                className="text-sm md:text-base font-medium text-blue-600"
               />
             </div>
           </div>
 
           {/* Location */}
-          <div className="flex items-center gap-1.5 text-[12px] sm:text-sm md:text-lg text-zinc-500 mt-1">
+          <div className="flex items-center gap-1.5 text-xs md:text-sm text-zinc-500 mt-1">
             <svg
               className="w-3.5 h-3.5 text-grey-500"
               fill="none"
@@ -97,7 +87,7 @@ md:w-6 md:h-6 text-blue-500 shrink-0"
               aria-label="GitHub"
             >
               <svg
-                className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6"
+                className="w-5 h-5"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -229,7 +219,11 @@ md:w-6 md:h-6 text-blue-500 shrink-0"
           </div>
           {/* Next.js */}
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-200/60 bg-white/40 text-xs font-semibold text-zinc-700 shadow-sm hover:-translate-y-0.5 transition-transform duration-300">
-            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <svg
+              className="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
               <path d="M11.572 0c-.176 0-.304.015-.39.047a1.27 1.27 0 0 0-.28.175l-7.404 6.42a1.27 1.27 0 0 0-.175.28c-.032.086-.047.214-.047.39v15.353c0 .176.015.304.047.39.043.107.102.201.175.28.079.073.173.132.28.175.086.032.214.047.39.047h15.353c.176 0 .304-.015.39-.047a1.27 1.27 0 0 0 .28-.175l.28-.28a1.27 1.27 0 0 0 .175-.28c.032-.086.047-.214.047-.39V7.312c0-.176-.015-.304-.047-.39a1.27 1.27 0 0 0-.175-.28l-7.404-6.42a1.27 1.27 0 0 0-.28-.175C11.876.015 11.748 0 11.572 0zm-.047 2.813h.094l6.28 5.437h-6.374V2.813zm-1.875 1.875v13.125H2.813V4.688l6.837-5.906v5.906zm1.875 1.875h7.031v13.125h-7.031V6.563z" />
             </svg>
             Next.js
